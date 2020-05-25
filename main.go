@@ -38,7 +38,16 @@ var itemCSV = "item.csv"
 
 func main() {
 	var categorys []Category
-	getCategorys := GetCategory()
+	getCategorys := []string{
+		"PET", "ACCESORY_HEAD", "PET_NEKOMATA", "RIDE_PET", "ACCESORY_FACE",
+		"HAMMER", "ARMOR_UPPER", "ONEPIECE", "BODYSUIT", "OVERALLS", "ARMOR_LOWER",
+		"SLACKS", "LONGBOOTS", "SOCKS", "SHOES", "BOOTS", "HALFBOOTS", "HELM",
+		"FULLFACE", "ACCESORY_NECK", "BACKPACK", "SHORT_SWORD", "SWORD", "RAPIER",
+		"CLAW", "SHIELD", "AXE", "STAFF", "SPEAR", "STRINGS", "BOOK", "BOW",
+		"GUN", "DUALGUN", "RIFLE", "COSTUME", "THROW", "ROPE",
+	}
+	//
+	//getCategorys := GetCategory()
 	items := GetItemFromCSV(itemCSV)
 
 	for ID, cate := range getCategorys {
